@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> on est le</title>
+    <body>
+        <!-- Conteneur pour afficher la date -->
+        <div id="date-container"></div>
+    </body>
+    <script>
+            var today = new Date();
+            var day = today.getDate();
+            var month = today.getMonth() + 1; 
+            var year = today.getFullYear();
+            var ladate = ('0' + day) + '/' + ('0' + month) + '/' + year;
+            document.getElementById('date-container').innerHTML = "On est le " + ladate + ".";
+        
+    </script>
+</head>
+
+</html>
